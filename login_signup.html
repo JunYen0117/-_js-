@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/css_reset.css">
+    <link rel="stylesheet" href="style/login_signup.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left_side">
+            <div class="left_side_content">
+                <div class="checked_title_flex">
+                    <img src="img/checkbox.svg" alt="">
+                    <h1>ONLINE TODO LIST</h1>
+                </div>
+                <figure class="board_img_area">
+                    <img src="img/board.svg" alt="">
+                </figure>
+            </div>
+        </div>
+
+        <div class="right_side">
+            <!-- 顯示or隱藏：登入區域 -->
+            <div class="right_side_content_login">
+                <h2 class="login_h2_text">最實用的線上代辦事項服務</h2>
+                <form action="">
+                    <label for="login_email_input">Email</label>
+                    <input type="text" id="login_email_input" placeholder="請輸入Email">
+                    <label for="login_pwd_input">密碼</label>
+                    <input type="password" id="login_pwd_input" placeholder="請輸入密碼"> 
+                    <div class="btn_area">
+                        <button class="login_btn" type="submit">登入</button>
+                    </div>
+                </form>
+                <div class="btn_area">
+                    <a class="switch_btn_tosignup">註冊帳號</a>
+                </div>
+            </div>
+
+            <!-- 顯示or隱藏：註冊區域 -->
+            <div class="right_side_content_signup none">
+                <h2 class="signup_h2_text">註冊帳號</h2>
+                <form action="">
+                    <label for="signup_email_input">Email</label>
+                    <input type="text" id="signup_email_input" placeholder="請輸入Email">
+                    <label for="signup_nickname_input">您的暱稱</label>
+                    <input type="text" id="signup_nickname_input" placeholder="請輸入您的暱稱">
+                    <label for="signup_pwd_input">密碼</label>
+                    <input type="password" id="signup_pwd_input" placeholder="請輸入密碼">
+                    <label for="signup_repwd_input">再次輸入密碼</label>
+                    <input type="password" id="signup_repwd_input" placeholder="請再次輸入密碼">
+                    <div class="btn_area">
+                        <button class="signup_btn" type="submit">註冊帳號</button>
+                    </div>
+                </form>
+                <div class="btn_area">
+                    <a class="switch_btn_tologin">登入</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/login_signup.js"></script>
+</body>
+</html>

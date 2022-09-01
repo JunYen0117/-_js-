@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/css_reset.css">
+    <link rel="stylesheet" href="/style/todolist.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="left_item">
+            <figure>
+                <img src="img/checkbox.svg" alt="">
+            </figure>
+            <h2 class="sub_title">
+                ONLINE TODO LIST
+            </h2>
+        </div>
+        <div class="right_item">
+            <div class="nickname_todolist">xxx 的代辦</div>
+            <div class="logout">登出</div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>TODO LIST</h1>
+        <div class="card input">
+            <input class="input_add" type="text" placeholder="請輸入待辦事項" />
+            <a href="#" class="btn_add">+</a>
+        </div>
+
+        <!-- 顯示or隱藏 -->
+        <div class="no_data_card">
+            <p>目前尚無待辦事項</p>
+            <figure>
+                <img src="img/empty.svg" alt="">
+            </figure>
+        </div>
+
+        <!-- 顯示or隱藏 -->
+        <div class="card card_list">
+            <ul class="tab">
+                <li class="all_btn active">全部</li>
+                <li class="unfinished_btn">待完成</li>
+                <li class="finished_btn">已完成</li>
+            </ul>
+            <div class="cart_content">
+                <ul class="list">
+                    <!-- <li>
+                        <label class="checkbox" for="">
+                            <input type="checkbox" />
+                            <span>把冰箱發霉的檸檬拿去丟</span>
+                        </label>
+                        <a href="#" class="delete"></a>
+                    </li> -->
+                </ul>
+                <div class="list_footer">
+                    <p id="unfinished_item">5 個待完成項目</p>
+                    <a id="delete_all" href="#">清除已完成項目</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/todolist.js"></script>
+</body>
+</html>

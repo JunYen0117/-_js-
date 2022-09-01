@@ -1,0 +1,79 @@
+        /* 以下為css模組化 */
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: #ffd370;
+        }
+        h1, h2, label, button, .switch_btn_tosignup, .switch_btn_tologin{
+            font-weight: bold;
+        }
+        h1{
+            font-size: 32px;
+        }
+        h2{
+            font-size: 24px;
+        }
+        label{
+            display: block;
+            font-size: 14px;
+        }
+        /* input欄位間距 */
+        .login_h2_text, #login_email_input, #login_pwd_input, .signup_h2_text, #signup_email_input, #signup_nickname_input, #signup_pwd_input, #signup_repwd_input{
+            margin-bottom: 20px;
+        }
+        /* input欄位樣式 */
+        #login_email_input, #login_pwd_input, #signup_email_input, #signup_nickname_input, #signup_pwd_input, #signup_repwd_input{
+            width: 300px;
+            height: 36px;
+        }
+        /* css模組化結束 */
+
+        .container{
+            display: flex;
+        }
+        .left_side{
+            width: 60%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .checked_title_flex{
+            display: flex;
+            justify-content: center;
+        }
+        .board_img_area{
+            display: flex;
+            justify-content: center;
+        }
+        .right_side{
+            width: 40%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn_area{
+            display: flex;
+            justify-content: center;
+        }
+        .login_btn, .signup_btn{
+            color: white;
+            background: black;
+            padding: 5px 30px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .switch_btn_tosignup, .switch_btn_tologin{
+            display: inline-block;
+            cursor: pointer;
+            padding: 5px 5px;
+            margin-bottom: 20px;
+        }
+        .switch_btn_tosignup:hover, .switch_btn_tologin:hover{
+            color: gray;
+        }
+        .none{
+            display: none;
+        }
