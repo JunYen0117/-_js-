@@ -38,10 +38,12 @@ h1 {
     font-family: "Baloo Tamma 2";
     letter-spacing: 0.5rem;
     font-weight: bold;
-
-    @media (max-width: 575px) {
-        font-size: 2rem;
-        margin-bottom: 1rem;
+}
+@media (max-width: 575px) {
+    h1{
+        display: none;
+        /* font-size: 2rem;
+        margin-bottom: 1rem; */
     }
 }
 
@@ -50,8 +52,11 @@ h1 {
     padding: 0 12px;
     width: 500px;
 
-    @media (max-width: 575px) {
+}
+@media (max-width: 575px) {
+    .container{
         margin-top: 1.5rem;
+        width: 100vw;
     }
 }
 
@@ -124,8 +129,9 @@ input[type="text"]::placeholder {
 
 .cart_content {
     padding: 0.5rem 1rem 1rem 1rem;
-
-    @media (max-width: 575px) {
+}
+@media (max-width: 575px) {
+    .cart_content{
         padding: 0.5rem 1rem 0.5rem 0.5rem;
     }
 }
@@ -133,8 +139,9 @@ input[type="text"]::placeholder {
 .list li {
     position: relative;
     padding-right: 2rem;
-
-    @media (max-width: 575px) {
+}
+@media (max-width: 575px) {
+    .list li{
         padding-right: 0;
     }
 }
@@ -152,12 +159,14 @@ input[type="text"]::placeholder {
     height: 1.5rem;
     background-image: url("../img/garbage.svg");
     background-size: contain;
-    /* @media (max-width: 575px) {
+}
+@media (max-width: 575px) {
+    .list li a.delete{
         opacity: 1;
         width: 12px;
         height: 12px;
-      } */
-}
+    }
+  }
 
 .list li:hover a.delete {
     opacity: 1;
@@ -169,8 +178,9 @@ input[type="text"]::placeholder {
     justify-content: space-between;
     padding: 1.5rem 2rem 1rem 0.5rem;
     font-size: 14px;
-
-    @media (max-width: 575px) {
+}
+@media (max-width: 575px) {
+    .list_footer{
         padding: 1.5rem 0 1rem 0.5rem;
     }
 }
@@ -195,7 +205,9 @@ input[type="text"]::placeholder {
     border-bottom: 1px solid #eee;
     line-height: 1.5;
 
-    @media (max-width: 575px) {
+}
+@media (max-width: 575px) {
+    .checkbox span{
         padding-right: 1rem;
     }
 }
@@ -267,7 +279,7 @@ input[type="text"]::placeholder {
 }
 
 .menu {
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     align-items: center;
 }
@@ -283,7 +295,11 @@ input[type="text"]::placeholder {
     font-weight: bold;
     padding: 15px;
 }
-
+@media (max-width: 575px) {
+    .nickname_todolist{
+        display: none;
+    }
+}
 .logout:hover {
     color: white;
     background: black;
