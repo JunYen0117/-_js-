@@ -47,6 +47,8 @@
             display: flex;
             justify-content: center;
         }
+
+
         .right_side{
             width: 40%;
             height: 100vh;
@@ -76,4 +78,34 @@
         }
         .none{
             display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container{
+                flex-direction: column;
+            }
+            .left_side{
+                width: 100%;
+                height: auto;
+                padding-top: 10px;
+                padding-bottom: 30px;
+            }
+            .container figure{
+                display: none;
+            }
+            .right_side{
+                width: 100%;
+                height: auto;
+            }
+            .right_side h2{
+                text-align: center;
+            }
+            .right_side_content_login, .right_side_content_signup{
+                width: 90%;
+            }
+            /* input欄位樣式 */
+            #login_email_input, #login_pwd_input, #signup_email_input, #signup_nickname_input, #signup_pwd_input, #signup_repwd_input{
+                width: 100%;
+                height: 36px;
+            }
         }
