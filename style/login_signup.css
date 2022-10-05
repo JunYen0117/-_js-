@@ -18,6 +18,9 @@
             display: block;
             font-size: 14px;
         }
+        input, textarea {
+            font-size: initial;
+         }
         /* input欄位間距 */
         .login_h2_text, #login_email_input, #login_pwd_input, .signup_h2_text, #signup_email_input, #signup_nickname_input, #signup_pwd_input, #signup_repwd_input{
             margin-bottom: 20px;
